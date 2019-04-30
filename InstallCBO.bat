@@ -55,7 +55,8 @@ cd %WEB_SEC%
 call yarn
 
 echo [36m==============================================================================
-echo [36mLEVANTANTANDO SERVICIOS...[0m
+echo [36mLOADING SERVICES...[0m
+echo.
 Powershell.exe -Command "Get-Service | Where-Object {$_.displayName.StartsWith(\"Kapsch\")} | Start-Service"
 
 echo.
